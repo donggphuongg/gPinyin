@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chinese Lyrics 24.12</title>
+        <script src="./code.js"></script>
+    </head>
+    <body>
+        <input type="file" id="bt_zhRead" 
+            style="cursor: pointer;"
+            onchange="bt_zhRead_change()">
+        <br>
+        <br>
+        <button id="bt_pyRead" 
+            style="cursor: pointer;"
+            onclick="bt_pyRead_click()">Read pinyin lyrics from Google Translate</button>
+        <br>
+        <br>
+        <button id="bt_runCmd" 
+            style="cursor: pointer;"
+            onclick="bt_runCmd_click()">Make zhonghua-pinyin lyrics auto</button>
+        <button id="bt_saveFile" 
+            style="cursor: pointer;"
+            onclick="bt_saveFile_click()">Save File</button>
+        <div id="dv_result"></div>
+        <div id="dv_zhFilename" 
+            style="color: white;"></div>
+        <div id="dv_zhLyr"
+            style="color: white;"></div>
+        <div id="dv_pyLyr"
+            style="color: white;"></div>
+    </body>
+</html>
