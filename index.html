@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Translate Pinyin Filter</title>
+        <script src="./code.js"></script>
+    </head>
+    <body>
+        Google translate pinyin code:<br>
+        <textarea rows="8" cols="50" id="ta_gpinyin"></textarea><br>
+        Option:<br>
+        <input type="checkbox" id="chb_proper">
+        <label for="chb_proper">Proper</label>
+        <input type="checkbox" id="chb_latin" onchange="chb_latin_change()">
+        <label for="chb_latin">Latin filter</label>
+        <div id="dv_zhchar" hidden>Enter chinese character of pinyin above:</div>
+        <textarea rows="8" cols="50" id="ta_zhchar" hidden></textarea><br>
+        <button>CONVERT PINYIN CHARACTER</button><br>
+        Output:<br>
+        <textarea rows="8" cols="50" id="tx_fpinyin"></textarea>
+    </body>
+</html>
